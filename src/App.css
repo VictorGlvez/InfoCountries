@@ -1,0 +1,616 @@
+#root {
+    text-align: center;
+}
+
+
+.fondo {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh !important;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    align-items: stretch;
+
+}
+
+.imagenes_fullsize {
+    z-index: 1000;
+}
+
+
+/* ------- COMPONENTE ABOUT ---------*/
+
+
+.fondo_about {
+    background-color: #FFF2D8;
+    position: relative;
+    min-height: 100vh !important;
+}
+
+.titulo_about {
+    color: #113946;
+    font-family: 'Patua One', serif;
+    position: relative;
+}
+
+.about:hover {
+    cursor: pointer;
+    color: white;
+}
+
+/* ----------------- */
+
+
+.rectangulo {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    border: thick solid;
+    text-align: start;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ------- COMPONENTE HEADER ---------*/
+.navbar {
+    background-color: #113946;
+    color: #FFF2D8 !important;
+    font-family: 'Patua One', serif;
+    display: flex;
+    z-index: 100;
+}
+
+/* ----------------- */
+
+
+/* ------- COMPONENTE JUEGO ---------*/
+
+
+/* seleccion nivel */
+
+.titulo_juego {
+    color: #113946;
+    font-weight: bold;
+}
+
+.descripcion_juego {
+    font-weight: bold;
+}
+
+.buttonPopUp {
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    background-color: transparent;
+    color: white;
+    margin-left: 20px;
+    border: 0;
+}
+
+.game_desc {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 0.8em;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 20px;
+    max-width: 300px;
+}
+
+/* botonera */
+.boton_seleccion_nivel {
+    color: white;
+    background-color: #113946;
+    border-radius: 30px;
+    border: thick solid;
+    border-color: white;
+    font-size: 2em;
+}
+
+/* bandera */
+
+.img_bandera {
+    border-radius: 20px;
+}
+
+
+/* generales */
+.button_sound {
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    font-size: 3em;
+    padding: 0;
+    background: transparent;
+    color: black !important;
+}
+
+.button_sound:hover {
+    border-color: transparent;
+}
+
+.animacionbandera {
+    animation: animacionkey 8s ease-in-out infinite alternate;
+}
+
+.respuesta_correcta {
+    background-color: green !important;
+    animation: clickBotonJuego 1.2s forwards;
+}
+
+.respuesta_incorrecta {
+    background-color: rgb(128, 7, 7) !important;
+    animation: clickBotonJuego 1.2s forwards;
+}
+
+.boton_modal_juego {
+    background-color: #113946;
+    color: white;
+}
+
+.modal_juego {
+    background-color: #FFF2D8;
+    border: 5px solid black;
+}
+
+@keyframes animacionkey {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes clickBotonJuego {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.subtitulo_juego {
+    color: #FFF2D8;
+    font-family: 'Patua One', serif;
+    text-align: center;
+}
+
+.boton_juego {
+    background-color: #4b48f3;
+    font-weight: bold;
+    color: white;
+    border: thick solid #c7c6c4;
+    border-radius: 50px;
+
+}
+
+.fondo_juego {
+    background-image: url("./assets/fondo_juego_con_filtro.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* object-position: center 45%; */
+    /* min-width: 100vh; */
+}
+
+.round_counter {
+    /* background-color: #4862f3; */
+    font-size: 2em;
+    margin-top: 10%;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* ----------------- */
+
+/* ------- COMPONENTE PAGENOTFOUND ---------*/
+.cryingflag {
+    max-width: 50%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+}
+
+.pagenotfound {
+    font-size: 4vh;
+}
+
+.fondo_pnf {
+    height: 100vh;
+}
+
+/* ----------------- */
+
+/* ------- COMPONENTE COMPARADOR ---------*/
+.fondo_comparador {
+    background-image: url("./assets/fondo_comparador_con_filtro.png");
+    background-size: cover;
+}
+
+.titulo_comparador {
+    color: #113946;
+    font-family: 'Patua One', serif;
+    position: relative;
+    font-size: clamp(2rem, 8vw, 4rem);
+}
+
+.comparador_2 {
+    min-width: 100%;
+}
+
+.comparador_textfield {
+    max-width: 200px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: #113946 !important;
+    size: 2em !important;
+}
+
+.slick-slide {
+    padding: 5px;
+}
+
+.slick-dots li button:before {
+    font-size: 10px !important;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.disabled:hover {
+    cursor: default !important;
+    border-color: white !important;
+}
+
+.boton_comparar {
+    background-color: #113946;
+    border-radius: 20px;
+    border-color: white;
+    color: white;
+    border: solid 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#loading {
+    border-top: 12px solid;
+    border-bottom: 12px solid;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-radius: 100%;
+    width: 7.5rem;
+    height: 7.5rem;
+    animation: loading 1.5s infinite linear;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ----------------- */
+
+/* ------- COMPONENTE BUSCADOR ---------*/
+
+.fondo_buscador {
+    background-image: url("./assets/fondo_buscador_con_filtro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    object-position: center 45%;
+}
+
+.titulo_buscador {
+    color: #113946;
+    font-family: 'Patua One', serif;
+    position: relative;
+}
+
+.rectangulo_buscador_1_grande {
+    position: relative;
+    z-index: 3;
+}
+
+.rectangulo_buscador_2 {
+    position: relative;
+}
+
+.select_buscador {
+    color: black;
+}
+
+
+/* ----------------- */
+
+
+/* ------- COMPONENTE GALERIA ---------*/
+
+.titulo_galeria {
+    color: #113946;
+    font-family: 'Patua One', serif;
+    position: relative;
+}
+
+.fondo_galeria {
+    background-image: url("./assets/fondo_galeria_con_filtro.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: bottom right;
+}
+
+.buscador-galería {
+    background-color: #f5f1e9;
+    height: fit-content;
+    width: 400px;
+}
+
+.imagen_galeria {
+    border-radius: 25px !important;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen_galeria:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media (max-width: 425px) {
+    .imagen_galeria {
+        height: 200px !important;
+    }
+}
+
+.buscador_galeria {
+    z-index: 10;
+}
+
+.imageGallery {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.imageModal {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.modal_gallery {
+    background: black !important;
+}
+
+
+/* ----------------- */
+
+
+/* ------- COMPONENTE OPCIONES ---------*/
+
+.texto_opciones {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    align-items: center;
+    width: fit-content;
+    font-family: 'Patua One', serif;
+    color: #113946;
+}
+
+.componente_opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.titulo_opciones {
+    font-size: 1.5em;
+    font-family: 'Patua One', serif;
+    color: #113946;
+    margin-bottom: 15px;
+}
+
+.descripcion_opciones {
+    font-size: 1em;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: #113946;
+    margin-bottom: 15px;
+}
+
+.card_opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px !important;
+    background-color: #FDF6EA !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card_opciones:hover {
+    transform: scale(1.05);
+}
+
+.imagenOpcion {
+    width: 200px;
+    height: 200px;
+    clip: rect(0px, 60px, 200px, 0px);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    margin: 10px;
+}
+
+.tarjetaOpcion {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    padding: 30px;
+}
+
+.tarjetaTexto {
+    align-items: center;
+    max-width: 350px;
+    height: 100%;
+
+}
+
+
+/* ----------------- */
+
+/* ------- COMPONENTE INTRODUCCION ---------*/
+
+.introduccion {
+    width: 100%;
+    height: 100vh;
+}
+
+.videoIntro {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ece5d7;
+}
+
+.titulo_introduccion {
+    font-family: 'Patua One', serif;
+    font-size: clamp(2rem, 8vw, 4rem);
+    margin: 0px 30px 0px 30px;
+}
+
+.destacado {
+    font-weight: bold;
+}
+
+.subtitulo_introduccion {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    margin: 50px 30px 0px 30px;
+}
+
+.boton_introduccion {
+    color: #113946;
+    margin-top: 50px;
+    font-size: 1.5em;
+    background-color: #FFF2D8;
+    border-radius: 50px;
+    margin-bottom: 1em;
+    font-family: 'Patua One', serif;
+    border: thick solid #BCA37F;
+    opacity: 0;
+    animation: fadeIn 1.5s 2s forwards;
+
+}
+
+.fondo_transparente {
+    background-color: rgba(17, 57, 70, 0.7);
+    padding: 10px;
+    border-radius: 50px;
+    border: thin solid #FFF2D8;
+    margin: 10px;
+    animation: fadeIn 1.5s 0.5s forwards;
+    opacity: 0
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* ModalStyles.css */
+
+.custom-modal-header {
+    background-color: #113946;
+    color: #FDF6EA;
+}
+
+.custom-modal-body {
+    background-color: #FFF2D8;
+    color: #113946;
+}
+
+.custom-modal-footer {
+    background-color: #113946 !important;
+    color: #FDF6EA;
+}
+
+.custom-card {
+    background-color: #113946 !important;
+    /* Cambia el color según tus necesidades */
+    color: #FDF6EA !important;
+    /* Cambia el color del texto según tus necesidades */
+    margin-top: 0.8rem;
+    border: 2px solid #BCA37F !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.custom-card .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

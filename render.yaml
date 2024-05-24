@@ -1,0 +1,7 @@
+services:
+- type: web
+  name: InfoCountries
+  buildCommand: npm run server
+  envVars:
+  - key: NODE_ENV
+    value: production
