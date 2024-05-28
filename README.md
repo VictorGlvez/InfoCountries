@@ -3,7 +3,7 @@ Este proyecto está hecho en Windows.
 
 
 
-PRE-REQUISITOS
+# PRE-REQUISITOS
 
 Antes de comenzar, se mostrará un listado con las herramientas y versiones utilizadas:
 
