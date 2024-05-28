@@ -3,7 +3,7 @@ Este proyecto está hecho en Windows.
 
 
 
-# PRE-REQUISITOS
+### PRE-REQUISITOS
 
 Antes de comenzar, se mostrará un listado con las herramientas y versiones utilizadas:
 
@@ -66,7 +66,7 @@ De la misma manera, comprobamos que el proyecto arranco bien en nuestro disposit
 
 
 
-CREAR PLUGIN LOCAL
+### CREAR PLUGIN LOCAL
 
 Cordova recomienda crear los plugins en una carpeta diferente a la del proyecto principal.
 
@@ -76,7 +76,7 @@ Vamos a la ruta donde queramos generar una carpeta con nuestro plugin y ejecutam
  -	plugman create --name (nombre) --plugin_id (nombre del id del plugin) --plugin_version (version de tu plugin)
 
 
-IMPORTANTE: Cordova recomienda que los id's de los plugins sigan el formato cordova-plugin-nombredelplugin pero he tenido muchos problemas con android para detectar la clase java que se genera por lo que lo mejor es poner la id todo junto y en minuscula sin ningún tipo de caracter especial.
+**IMPORTANTE:** Cordova recomienda que los id's de los plugins sigan el formato cordova-plugin-nombredelplugin pero he tenido muchos problemas con android para detectar la clase java que se genera por lo que lo mejor es poner la id todo junto y en minuscula sin ningún tipo de caracter especial.
 
 El comando que yo utilicé:
 
@@ -103,11 +103,9 @@ el "." para que lo genere en el directorio actual, es decir, la ruta de instalac
 Recomiendo ejectuar el comando de esta forma. Podemos dejar por defecto todos los datos que nos pregunta.
 
 Una vez creado el package, nuestro plugin ya está listo para ser instalado en el proyecto principal.
+\n\n
 
-
-
-
-INSTALAR Y USAR PLUGIN EN EL PROYECTO
+### INSTALAR Y USAR PLUGIN EN EL PROYECTO
 
 Nos situamos en la carpeta del proyecto e instalamos el plugin:
 
@@ -138,7 +136,6 @@ Dentro de nuestro plugin:
 	.\miplugin\src\android\miplugin.java	->	Clase donde esta nuestros métodos nativos.
 
 	.\miplugin\www\miplugin.js	->	Es importante que haya tantos exports como métodos haya en el fichero de java. 
-
 
 
 
